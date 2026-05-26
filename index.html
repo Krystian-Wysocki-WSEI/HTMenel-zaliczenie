@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMenel Zaliczenie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- #container>nav+main>header>h1{White Knuckle Guides}+h3{Hang tight, you got this!}^article>section>.section_title{What is White Knuckle?}+.hardmode_text{If you don't know, then why are you even here?}+.section_content>Lorem^^article>.section_title{Guides}^article>.section_title{Tips}^footer^aside -->
+
+    <div id="container">
+
+        <main>
+
+            <!-- header>.headerItem>img.handLeft^.headerItem>.pageTitle{White Knuckle Guides}+.pageSub{Hang tight, you got this!}^.headerItem>img.handRight -->
+            <header>
+                <div class="headerItem"><img src="./hand-small.png" alt="" class="handLeft"></div>
+                <div class="headerItem">
+                    <div class="pageTitle">White Knuckle Guides</div>
+                    <div class="pageSub">Hang tight, you got this!</div>
+                </div>
+                <div class="headerItem"><img src="./hand-small.png" alt="" class="handRight"></div>
+            </header>
+
+            <div class="sectionSeparator"></div>
+
+            <article>
+
+                <section id="white_knuckle">
+                    <div class="section_title">What is White Knuckle?</div>
+                    <div class="hardmode_text">If you don't know, then why are you even here?</div>
+                    <div class="section_content">
+                        
+                        <div class="txt">
+                            White Knuckle is an indie horror game created by Dark Machine Games,
+                            composed of Holly Jencka (lead programmer and developer), Quinn Steagall (artist, animator), and Jack Folkner (sound designer, musician);
+                            and published by DreadXP.
+                        </div>
+                        <div class="txt">
+                            The main gameplay of White Knuckle
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <div class="sectionSeparator"></div>
+
+                <!-- section#about_us>.section_title{About us}+.sectionContent>Lorem^^.sectionSeparator -->
+                <section id="about_us">
+                    <div class="section_title">About us</div>
+                    <div class="sectionContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus rerum odit blanditiis! Ratione nesciunt ut ipsa architecto natus saepe, iure sint consequuntur deleniti molestiae laborum temporibus fugiat aspernatur possimus.</div>
+                </section>
+
+                <div class="sectionSeparator"></div>
+
+                <section id="campaign">
+                    <div class="section_title">The Campaign</div>
+
+                    <div class="section_content">
+                        Our main guides for the campaign.
+                        These guides are ONLY for the campaign, they do not contain information about endless modes, as many strategies and optimal routes are different in these, despite being set in the same maps.
+                        For endless modes, look in the <a href="#achievements" class="insiteLink">Achievements Section</a>.
+                        
+                        <!-- .guideList>(a.guideLink>.guideTitle{Guide $}+.guideSub{This guide is about something}+img.guideBg+.bgAltText{Alt text for bg $}+.hoverShine)*5 -->
+
+                        <div class="guideList">
+                            <a href="#" id="silos" class="guideLink left">
+                                <div class="guideTitle">Silos (SB17)</div>
+                                <div class="guideSub">Deep Storage, Air Exchange, and Shattered Chambers</div>
+                                <img src="./silos1.jpg" alt="Screenshot of deep storage silo" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 1</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="pipeworks" class="guideLink right">
+                                <div class="guideTitle">Pipeworks (SB17)</div>
+                                <div class="guideSub">Drainage System, Pipe Organ, and Waste Heap</div>
+                                <img src="./pipeworks3.png" alt="Screenshot of pipeworks waste heap room" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 2</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="habitation" class="guideLink left">
+                                <div class="guideTitle">Habitation Yellow</div>
+                                <div class="guideSub">Service Shaft, Haunted Pier, and Delta Labs</div>
+                                <img src="./habitation1.png" alt="Screenshot of habitation forlorn gateway entrance" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 3</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="abyss" class="guideLink right">
+                                <div class="guideTitle">The Abyss</div>
+                                <div class="guideSub">Inter-structure Transit Network. Transit Scaffolds, Deadman's Handle, and Hanging Gardens</div>
+                                <img src="./abyss1.png" alt="Screenshot of abyss transit scaffolds" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 4</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="nest" class="guideLink bottom">
+                                <div class="guideTitle">Coming Soon: <span class="nestText">The Nest</span></div>
+                                <div class="guideSub">In June 2026!</div>
+                                <img src="./nest1.jpg" alt="Screenshot of nest entrance, currently ingame" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 5</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="sectionSeparator"></div>
+
+                <section id="other">
+                    <div class="section_title">Other Guides</div>
+
+                    <div class="section_content">
+                        Additional guides for other aspects for the game.
+                        <div class="iron_knuckle">Disclaimer: These guides are supplementary for the main campaign guides.</div>
+                        
+                        <!-- .guideList>(a.guideLink>.guideTitle{Guide $}+.guideSub{This guide is about something}+img.guideBg+.bgAltText{Alt text for bg $}+.hoverShine)*4 -->
+                        <div class="guideList">
+                            <a href="#" id="challenges" class="guideLink left highContrast">
+                                <div class="guideTitle">Challenges</div>
+                                <div class="guideSub">
+                                    Contains multiple routes for all challenge maps,
+                                    including Shuttered Rift and the newly added Boost Course,
+                                    tailored to multiple skill levels!
+                                </div>
+                                <img src="./challenges1.jpg" alt="Screenshot of shuttered rift entrance" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 1</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="events" class="guideLink right">
+                                <div class="guideTitle">Events</div>
+                                <div class="guideSub">
+                                    Routes for sesonal events maps: Parasite and The Chimney
+                                </div>
+                                <img src="./events1.png" alt="Screenshot of parasite map" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 2</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="achievements" class="guideLink left highContrast">
+                                <div class="guideTitle">Achievements</div>
+                                <div class="guideSub">Want to get that 100%? We'll help you get them all!</div>
+                                <img src="./achievements1.jpg" alt="Screenshot of ingame recycler" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 3</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                            <a href="#" id="speedrunning" class="guideLink right">
+                                <div class="guideTitle">Speedrunning</div>
+                                <div class="guideSub">
+                                    Everything you need to become a speedrunner!
+                                    Includes discord contacts to helpful speedrunners who can help you and share valuable tips.
+                                </div>
+                                <img src="./speedrunning2.png" alt="Screenshot of tangled silk shortcut" class="guideBg">
+                                <div class="bgAltText">Alt text for bg 4</div>
+                                <div class="hoverShine"></div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <div class="sectionSeparator"></div>
+
+                <!-- section#newsletter>.section_title{Be prepared!}+.section_content>.txt{Sign up for our newsletter to be notified when we release a guide for The Nest}+form -->
+                <section id="newsletter">
+                    <div class="section_title">Be prepared!</div>
+                    <div class="section_content">
+                        Sign up for our newsletter to be notified when we release a guide for <span class="nestText">The Nest</span>
+                        <form action=""></form>
+                    </div>
+                </section>
+
+            </article>
+
+            <footer>
+                White Knuckle Guides by Krystian Wysocki (16322), 2026
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
