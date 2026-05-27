@@ -20,6 +20,7 @@ body {
     --shineWidth: 100px;
     --shineSkew: -20deg;
     --entranceDuration: 1.1s;
+    --sectionIconSize: 4rem;
 }
 
 #container {
@@ -35,10 +36,12 @@ header {
     gap: 1.5rem;
 }
 
+/* Styled to look lihe Hardmode Text in WK */
 .hardmode_text {
     color: red;
 }
 
+/* Styled to look like Iron Knuckle text in WK */
 .iron_knuckle {
     color: orange;
 }
@@ -206,7 +209,21 @@ section {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 15px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+
+    display: flex;
+    align-items: center;
+}
+
+.sectionIcon {
+    width: auto;
+    height: var(--sectionIconSize);
+    order: -1;
+    margin-right: 20px;
+}
+
+.section_content {
+    text-align: justify;
 }
 
 .insiteLink {
