@@ -102,6 +102,10 @@ header {
 
     text-decoration: none;
     cursor: default;
+    animation-play-state: paused;
+
+    --animationName: "";
+    opacity: 0;
 }
 
 .guideLink:hover {
@@ -115,18 +119,26 @@ header {
 
 .left {
     transform-origin: right center;
-    animation: guideEntranceLeft var(--entranceDuration);
+    /* animation: guideEntranceLeft var(--entranceDuration); */
+    --animationName: "guideEntranceLeft";
 }
 
 .right {
     transform-origin: left center;
-    animation: guideEntranceRight var(--entranceDuration);
+    /* animation: guideEntranceRight var(--entranceDuration); */
+    --animationName: "guideEntranceRight";
 }
 
 .bottom {
     transform-origin: center top;
     grid-column: span 2;
-    animation: guideEntranceBottom var(--entranceDuration);
+    /* animation: guideEntranceBottom var(--entranceDuration); */
+    --animationName: "guideEntranceBottom";
+}
+
+.visible {
+    animation: var(--animationName) var(--entranceDuration);
+    opacity: 1;
 }
 
 .guideBg {
