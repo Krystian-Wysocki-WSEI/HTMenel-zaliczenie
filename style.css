@@ -12,24 +12,30 @@ body {
     font-size: 1.65rem;
     line-height: 0.9;
 
-    background-color: #111;
-    color: white;
+    background-color: var(--bgColor);
+    color: var(--fontColor);
 
+    --bgColor: #111;
+    --darkerBg: #0a0a0a;
+    --fontColor: white;
     --guideTransitionDur: 0.5s;
     --guideShineDur: 0.25s;
     --shineWidth: 100px;
     --shineSkew: -20deg;
     --entranceDuration: 1.1s;
     --sectionIconSize: 4rem;
+
+    margin: 0;
+    padding: 0;
 }
 
 #container {
     width: 70vw;
-    margin: auto;
+    margin: 0 auto;
 }
 
 header {
-    margin-top: 30px;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +84,13 @@ header {
 .guideList {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    gap: 1rem;
 
     margin: 20px 0px;
 }
 
 .guideLink {
-    color: white;
+    color: var(--fontColor);
     background: transparent;
     display: inline-block;
     border: 2px solid darkgrey;
@@ -239,11 +245,127 @@ section {
 }
 
 .insiteLink {
-    
+    color: var(--fontColor);
+    font-weight: bold;
+
+    padding: 0rem 0.3rem 0.2rem 0.3rem;
+    display: inline-block;
+    border-radius: 7px;
+    margin: 0;
+}
+
+.insiteLink:hover {
+    color: var(--bgColor);
+    background-color: var(--fontColor);
+
 }
 
 .txt {
     margin-bottom: 1rem;
+}
+
+.withTooltip {
+    border-bottom: 2px var(--fontColor) dotted;
+}
+
+.requiredStar {
+    color: rgb(255, 43, 43);
+    font-weight: bold;
+}
+
+footer {
+    margin: 2rem 0;
+
+    text-align: center;
+
+    font-size: 1.25em;
+}
+
+.newsletterForm {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    gap: 4rem;
+    margin: 0 4rem;
+}
+
+.newsletterForm>form {
+    width: fit-content;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.newsletterForm>form label {
+    margin-bottom: 0.2rem;
+    user-select: none;
+}
+
+.newsletterForm>form>input {
+    margin-bottom: 1rem;
+}
+
+.newsletterForm>form>fieldset {
+    margin-bottom: 1rem;
+}
+
+.txtInput {
+    max-width: 15rem;
+    width: 80%;
+    padding: 0.3rem;
+}
+
+.submitButton {
+    margin-top: 1rem;
+
+    padding: 0.4rem 0.8rem;
+
+    font-family: Pixel;
+    font-size: 1.05em;
+    line-height: 1;
+
+    /* text-transform: uppercase; */
+    font-weight: bold;
+
+    border-radius: 0;
+    border: 3px var(--buttonColor) solid;
+    background-color: var(--bgColor);
+    /* color: var(--fontColor); */
+    color: var(--buttonColor);
+
+    --buttonColor: rgb(230, 114, 6);
+}
+
+fieldset {
+}
+
+/* Switch form flex direction, since the side text will be too squeezed by now */
+@media only screen and (max-width: 1090px) {
+    .newsletterForm {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .newsletterForm>form {
+        align-self: center;
+    }
+}
+
+/* Lower size of font in Challenges and Speedrunning links, as the text goes out of bounds */
+@media only screen and (max-width: 1050px) {
+    #challenges, #speedrunning {
+        font-size: 1.45rem;
+        /* font-size: clamp(); */
+    }
+}
+
+/* Switch from 2 column to single column */
+@media only screen and (max-width: 860px) {
+    
 }
 
 @keyframes guideEntranceLeft {

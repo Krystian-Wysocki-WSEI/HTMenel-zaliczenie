@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTMenel Zaliczenie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/hand2.png" type="image/x-icon">
 </head>
 <body>
     
@@ -39,10 +40,17 @@
                         <div class="txt">
                             White Knuckle is an indie horror game created by Dark Machine Games,
                             composed of Holly Jencka (lead programmer and developer), Quinn Steagall (artist, animator), and Jack Folkner (sound designer, musician);
-                            and published by DreadXP.
+                            and published by DreadXP. It has been released in the Early Access model in April 2025.
                         </div>
                         <div class="txt">
-                            The main gameplay of White Knuckle
+                            The main gameplay of White Knuckle involves trying to escape an enormous underground megastructure.
+                            The player has to climb up through multiple zones inside of the Substructure, later escaping into the bigger encompassing Superstructure,
+                            while avoiding the structure's multiple alien, more-or-less hostile denizens.
+                            The game also involves elements of exploration, inventory management, and limited meta progression.
+                            White Knuckle is currently in early access, and will remain so while new content is being added.
+                            It can currently be purchased on
+                            <a href="https://store.steampowered.com/app/3195790/White_Knuckle/" target="_blank" class="insiteLink">Steam</a>
+                            for 14.99&dollar;.
                         </div>
                         
                     </div>
@@ -56,7 +64,13 @@
                         About us
                         <img src="./assets/trinket.png" alt="" srcset="" class="sectionIcon">
                     </div>
-                    <div class="sectionContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus rerum odit blanditiis! Ratione nesciunt ut ipsa architecto natus saepe, iure sint consequuntur deleniti molestiae laborum temporibus fugiat aspernatur possimus.</div>
+                    <div class="sectionContent">
+                        <div class="txt">
+                            We're a team of small dedicated players and speedrunners, who love White Knuckle!
+                            Out goal with this website is to create a comprehensive array of guides for both new and experienced players.
+                            You can contact us through discord, the webmaster email, or find us lurking in the official WK discord server.
+                        </div>
+                    </div>
                 </section>
 
                 <div class="sectionSeparator"></div>
@@ -68,9 +82,11 @@
                     </div>
 
                     <div class="section_content">
-                        Our main guides for the campaign.
-                        These guides are ONLY for the campaign, they do not contain information about endless modes, as many strategies and optimal routes are different in these, despite being set in the same maps.
-                        For endless modes, look in the <a href="#achievements" class="insiteLink">Achievements Section</a>.
+                        <div class="txt">
+                            Our main guides for the campaign.
+                            These guides are ONLY for the campaign, they do not contain information about endless modes, as many strategies and optimal routes are different in these, despite being set in the same maps.
+                            For endless modes, look in the <a href="#achievements" class="insiteLink">Achievements Section</a>.
+                        </div>
                         
                         <!-- .guideList>(a.guideLink>.guideTitle{Guide $}+.guideSub{This guide is about something}+img.guideBg+.bgAltText{Alt text for bg $}+.hoverShine)*5 -->
 
@@ -124,7 +140,8 @@
                     </div>
 
                     <div class="section_content">
-                        Additional guides for other aspects for the game.
+                        Additional guides for other aspects for the game. The sections for Achievements and Speedrunning also include guides for the Endless mode
+                        (respectively tailored for ease of use and survivability for achievements, and speed for speedrunners).
                         <div class="iron_knuckle">Disclaimer: These guides are supplementary for the main campaign guides.</div>
                         
                         <!-- .guideList>(a.guideLink>.guideTitle{Guide $}+.guideSub{This guide is about something}+img.guideBg+.bgAltText{Alt text for bg $}+.hoverShine)*4 -->
@@ -181,8 +198,44 @@
                         Be prepared!
                     </div>
                     <div class="section_content">
-                        Sign up for our newsletter to be notified when we release a guide for <span class="nestText">The Nest</span>
-                        <form action=""></form>
+
+                        <div class="newsletterForm">
+
+                            <div class="txt">
+                                Sign up for our newsletter to be notified when we release a guide for <span class="nestText">The Nest</span>.
+                                And don't worry, we won't spam you! We'll only send the emails from the categories that you selected during sing-up.
+                                If you want to unsubscribe, you can do so easily with a link on the bottom of every email.
+                                If you encounter any problems, feel free to contact our webmaster through email (or discord).
+                            </div>
+                            <form action="#" method="POST">
+
+                                <label for="username" title="Not required, used only for contacting through discord" class="withTooltip">Discord Username (?)</label>
+                                <input type="text" name="username" id="username" class="txtInput" placeholder="@coolguy420">
+
+                                <label for="email">Email<span class="requiredStar">*</span></label>
+                                <input type="email" name="email" id="email" class="txtInput" placeholder="cool.guy@evencooler.site" required>
+
+                                <!-- label{Wanted News:}+fieldset#wanted>(.checkboxRow>label{Checkbox $}+input:checkbox#checkbox$)*6 -->
+                                <label for="">Wanted News</label>
+                                <fieldset id="wanted">
+                                    <div class="checkboxRow"><label for="newRegions">Release of The Nest Guide</label><input type="checkbox" name="newRegions" value="newRegions" id="newRegions" checked disabled></div>
+                                    <div class="checkboxRow"><label for="speedrunningNews">New Speedrunning Routes</label><input type="checkbox" name="speedrunningNews" id="speedrunningNews"></div>
+                                    <div class="checkboxRow"><label for="contentNews">Minor WK Content Updates</label><input type="checkbox" name="contentNews" id="contentNews"></div>
+                                    <div class="checkboxRow"><label for="balancingNews">WK Balancing Updates</label><input type="checkbox" name="balancingNews" id="balancingNews"></div>
+                                    <div class="checkboxRow"><label for="communityNews">Community News</label><input type="checkbox" name="communityNews" id="communityNews"></div>
+                                    <div class="checkboxRow"><label for="websiteNews">Website News</label><input type="checkbox" name="websiteNews" id="websiteNews"></div>
+                                </fieldset>
+
+                                <div class="checkboxRow">
+                                    <label for="unsubAfterNextRegion">Unsubscribe After The Nest Release</label>
+                                    <input type="checkbox" name="unsubAfterNextRegion" id="unsubAfterNextRegion">
+                                </div>
+
+                                <input type="submit" value="Sign me up!" class="submitButton">
+
+                            </form>
+
+                        </div>
                     </div>
                 </section>
 

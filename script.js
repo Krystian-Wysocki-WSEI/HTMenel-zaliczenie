@@ -45,12 +45,13 @@ const links = document.getElementsByClassName("guideLink");
 
 function OnLoad()
 {
-    const observer = new IntersectionObserver((entities, observer) => {
+    const observer = new IntersectionObserver((entities, obs) => {
         for(e of entities)
         {
             if(e.isIntersecting)
             {
                 e.target.classList.add("visible");
+                obs.unobserve(e.target);
             }
         }
     }, {threshold: 0.2});
