@@ -338,6 +338,17 @@ footer {
     color: var(--buttonColor);
 
     --buttonColor: rgb(230, 114, 6);
+
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+
+    text-transform: uppercase;
+}
+
+.submitButton:hover {
+    color: var(--bgColor);
+    background-color: var(--buttonColor);
 }
 
 fieldset {
@@ -363,9 +374,54 @@ fieldset {
     }
 }
 
-/* Switch from 2 column to single column */
-@media only screen and (max-width: 860px) {
-    
+/* Switch from 2 column to single column, also increase the size of Challenges and Speedrunning links' fonts back up */
+@media only screen and (max-width: 800px) {
+    #challenges, #speedrunning {
+        font-size: inherit;
+    }
+
+    .guideList {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .left, .right, .bottom {
+        transform-origin: center;
+    }
+
+    .bottom {
+        --animationName: "guideEntranceLeft";
+    }
+}
+
+/* Remove form's padding */
+@media only screen and (max-width: 630px) {
+    .newsletterForm {
+        margin: 0;
+    }
+}
+
+/* Disable hands in header, once again decrease annnoying fonts' size, slightly increase container width */
+@media only screen and (max-width: 500px) {
+    #container {
+        width: 85vw;
+    }
+
+    .handLeft, .handRight {
+        display: none;
+    }
+
+    #challenges, #speedrunning {
+        font-size: 1.45rem;
+    }
+}
+
+/* For phones and down */
+@media only screen and (max-width: 400px) {
+    #container {
+        width: 85vw;
+    }
 }
 
 @keyframes guideEntranceLeft {
